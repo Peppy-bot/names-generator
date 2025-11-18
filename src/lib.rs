@@ -5,12 +5,14 @@ const ADJECTIVES: &[&str] = &[
     "agitated",
     "amazing",
     "angry",
+    "audacious",
     "awesome",
     "beautiful",
     "blissful",
     "bold",
     "boring",
     "brave",
+    "buoyant",
     "busy",
     "charming",
     "clever",
@@ -22,6 +24,7 @@ const ADJECTIVES: &[&str] = &[
     "cranky",
     "crazy",
     "dazzling",
+    "daring",
     "determined",
     "distracted",
     "dreamy",
@@ -33,6 +36,7 @@ const ADJECTIVES: &[&str] = &[
     "eloquent",
     "epic",
     "exciting",
+    "fearless",
     "fervent",
     "festive",
     "flamboyant",
@@ -42,6 +46,7 @@ const ADJECTIVES: &[&str] = &[
     "funny",
     "gallant",
     "gifted",
+    "gleeful",
     "goofy",
     "gracious",
     "great",
@@ -61,6 +66,7 @@ const ADJECTIVES: &[&str] = &[
     "laughing",
     "loving",
     "lucid",
+    "luminous",
     "magical",
     "modest",
     "musing",
@@ -75,10 +81,12 @@ const ADJECTIVES: &[&str] = &[
     "peaceful",
     "pedantic",
     "pensive",
+    "playful",
     "practical",
     "priceless",
     "quirky",
     "quizzical",
+    "radiant",
     "recursing",
     "relaxed",
     "reverent",
@@ -88,11 +96,13 @@ const ADJECTIVES: &[&str] = &[
     "sharp",
     "silly",
     "sleepy",
+    "spirited",
     "stoic",
     "strange",
     "stupefied",
     "suspicious",
     "sweet",
+    "tenacious",
     "tender",
     "thirsty",
     "trusting",
@@ -162,12 +172,16 @@ const SURNAMES: &[&str] = &[
     "booth",
     // Anita Borg - Anita Borg was the founding director of the Institute for Women and Technology (IWT). https://en.wikipedia.org/wiki/Anita_Borg
     "borg",
+    // Max Born - German physicist and mathematician who helped establish quantum mechanics and shared the 1954 Nobel Prize in Physics. https://en.wikipedia.org/wiki/Max_Born
+    "born",
     // Satyendra Nath Bose - He provided the foundation for Bose–Einstein statistics and the theory of the Bose–Einstein condensate. - https://en.wikipedia.org/wiki/Satyendra_Nath_Bose
     "bose",
     // Katherine Louise Bouman is an imaging scientist and Assistant Professor of Computer Science at the California Institute of Technology. She researches computational methods for imaging, and developed an algorithm that made possible the picture first visualization of a black hole using the Event Horizon Telescope. - https://en.wikipedia.org/wiki/Katie_Bouman
     "bouman",
     // Evelyn Boyd Granville - She was one of the first African-American woman to receive a Ph.D. in mathematics; she earned it in 1949 from Yale University. https://en.wikipedia.org/wiki/Evelyn_Boyd_Granville
     "boyd",
+    // Tycho Brahe - Danish astronomer renowned for his precise observations that paved the way for modern celestial mechanics. https://en.wikipedia.org/wiki/Tycho_Brahe
+    "brahe",
     // Brahmagupta - Ancient Indian mathematician during 598-670 CE who gave rules to compute with zero - https://en.wikipedia.org/wiki/Brahmagupta#Zero
     "brahmagupta",
     // Walter Houser Brattain co-invented the transistor - https://en.wikipedia.org/wiki/Walter_Houser_Brattain
@@ -180,6 +194,8 @@ const SURNAMES: &[&str] = &[
     "burnell",
     // Annie Jump Cannon - pioneering female astronomer who classified hundreds of thousands of stars and created the system we use to understand stars today. https://en.wikipedia.org/wiki/Annie_Jump_Cannon
     "cannon",
+    // George Robert Carruthers - American physicist and inventor of the ultraviolet camera/spectrograph flown on Apollo 16. https://en.wikipedia.org/wiki/George_Robert_Carruthers
+    "carruthers",
     // Rachel Carson - American marine biologist and conservationist, her book Silent Spring and other writings are credited with advancing the global environmental movement. https://en.wikipedia.org/wiki/Rachel_Carson
     "carson",
     // Dame Mary Lucy Cartwright - British mathematician who was one of the first to study what is now known as chaos theory. Also known for Cartwright's theorem which finds applications in signal processing. https://en.wikipedia.org/wiki/Mary_Cartwright
@@ -216,6 +232,8 @@ const SURNAMES: &[&str] = &[
     // Joan Curran was a Welsh scientist who developed radar and invented chaff, a radar countermeasure. https://en.wikipedia.org/wiki/Joan_Curran
     // Samuel Curran was an Irish physicist who worked alongside his wife during WWII and invented the proximity fuse. https://en.wikipedia.org/wiki/Samuel_Curran
     "curran",
+    // John Dalton - English chemist and physicist who pioneered modern atomic theory and researched color blindness. https://en.wikipedia.org/wiki/John_Dalton
+    "dalton",
     // Charles Darwin established the principles of natural evolution. https://en.wikipedia.org/wiki/Charles_Darwin.
     "darwin",
     // Leonardo Da Vinci invented too many things to list here. https://en.wikipedia.org/wiki/Leonardo_da_Vinci.
@@ -256,6 +274,8 @@ const SURNAMES: &[&str] = &[
     "euler",
     // Michael Faraday - British scientist who contributed to the study of electromagnetism and electrochemistry. https://en.wikipedia.org/wiki/Michael_Faraday
     "faraday",
+    // Mitchell Feigenbaum - American mathematical physicist whose work on chaos theory led to the Feigenbaum constants. https://en.wikipedia.org/wiki/Mitchell_Feigenbaum
+    "feigenbaum",
     // Horst Feistel - German-born American cryptographer who was one of the earliest non-government researchers to study the design and theory of block ciphers. Co-developer of DES and Lucifer. Feistel networks, a symmetric structure used in the construction of block ciphers are named after him. https://en.wikipedia.org/wiki/Horst_Feistel
     "feistel",
     // Pierre de Fermat pioneered several aspects of modern mathematics. https://en.wikipedia.org/wiki/Pierre_de_Fermat
@@ -264,6 +284,8 @@ const SURNAMES: &[&str] = &[
     "fermi",
     // Richard Feynman was a key contributor to quantum mechanics and particle physics. https://en.wikipedia.org/wiki/Richard_Feynman
     "feynman",
+    // Leonardo Fibonacci - Italian mathematician who popularized the Hindu–Arabic numeral system in Europe and introduced the Fibonacci sequence. https://en.wikipedia.org/wiki/Fibonacci
+    "fibonacci",
     // Benjamin Franklin is famous for his experiments in electricity and the invention of the lightning rod.
     "franklin",
     // Yuri Alekseyevich Gagarin - Soviet pilot and cosmonaut, best known as the first human to journey into outer space. https://en.wikipedia.org/wiki/Yuri_Gagarin
@@ -290,6 +312,8 @@ const SURNAMES: &[&str] = &[
     "golick",
     // Jane Goodall - British primatologist, ethologist, and anthropologist who is considered to be the world's foremost expert on chimpanzees - https://en.wikipedia.org/wiki/Jane_Goodall
     "goodall",
+    // Robert H. Goddard - American engineer and physicist credited with creating and building the world's first liquid-fueled rocket. https://en.wikipedia.org/wiki/Robert_H._Goddard
+    "goddard",
     // Stephen Jay Gould was an American paleontologist, evolutionary biologist, and historian of science. He is most famous for the theory of punctuated equilibrium - https://en.wikipedia.org/wiki/Stephen_Jay_Gould
     "gould",
     // Carolyn Widney Greider - American molecular biologist and joint winner of the 2009 Nobel Prize for Physiology or Medicine for the discovery of telomerase. https://en.wikipedia.org/wiki/Carol_W._Greider
@@ -384,12 +408,16 @@ const SURNAMES: &[&str] = &[
     "lederberg",
     // Inge Lehmann - Danish seismologist and geophysicist. Known for discovering in 1936 that the Earth has a solid inner core inside a molten outer core. https://en.wikipedia.org/wiki/Inge_Lehmann
     "lehmann",
+    // Georges Lemaître - Belgian priest, astronomer, and physicist who proposed the theory of the expansion of the universe often called the Big Bang. https://en.wikipedia.org/wiki/Georges_Lema%C3%AEtre
+    "lemaitre",
     // Daniel Lewin - Mathematician, Akamai co-founder, soldier, 9/11 victim-- Developed optimization techniques for routing traffic on the internet. Died attempting to stop the 9-11 hijackers. https://en.wikipedia.org/wiki/Daniel_Lewin
     "lewin",
     // Ruth Lichterman - one of the original programmers of the ENIAC. https://en.wikipedia.org/wiki/ENIAC - https://en.wikipedia.org/wiki/Ruth_Teitelbaum
     "lichterman",
     // Barbara Liskov - co-developed the Liskov substitution principle. Liskov was also the winner of the Turing Prize in 2008. - https://en.wikipedia.org/wiki/Barbara_Liskov
     "liskov",
+    // László Lovász - Hungarian mathematician whose work on graph theory, combinatorics, and the Lovász local lemma earned him the 2021 Abel Prize. https://en.wikipedia.org/wiki/L%C3%A1szl%C3%B3_Lov%C3%A1sz
+    "lovasz",
     // Ada Lovelace invented the first algorithm. https://en.wikipedia.org/wiki/Ada_Lovelace (thanks James Turnbull)
     "lovelace",
     // Auguste and Louis Lumière - the first filmmakers in history - https://en.wikipedia.org/wiki/Auguste_and_Louis_Lumi%C3%A8re
@@ -466,6 +494,10 @@ const SURNAMES: &[&str] = &[
     "pasteur",
     // Cecilia Payne-Gaposchkin was an astronomer and astrophysicist who, in 1925, proposed in her Ph.D. thesis an explanation for the composition of stars in terms of the relative abundances of hydrogen and helium. https://en.wikipedia.org/wiki/Cecilia_Payne-Gaposchkin
     "payne",
+    // Sir Roger Penrose - Mathematical physicist whose insights into spacetime and black holes earned him the 2020 Nobel Prize in Physics. https://en.wikipedia.org/wiki/Roger_Penrose
+    "penrose",
+    // Grigori Perelman - Russian mathematician who proved the Poincaré conjecture and declined the Fields Medal and Clay Millennium Prize. https://en.wikipedia.org/wiki/Grigori_Perelman
+    "perelman",
     // Radia Perlman is a software designer and network engineer and most famous for her invention of the spanning-tree protocol (STP). https://en.wikipedia.org/wiki/Radia_Perlman
     "perlman",
     // Rob Pike was a key contributor to Unix, Plan 9, the X graphic system, utf-8, and the Go programming language. https://en.wikipedia.org/wiki/Rob_Pike
@@ -524,6 +556,8 @@ const SURNAMES: &[&str] = &[
     "solomon",
     // Frances Spence - one of the original programmers of the ENIAC. https://en.wikipedia.org/wiki/ENIAC - https://en.wikipedia.org/wiki/Frances_Spence
     "spence",
+    // Richard Stallman - Founder of the GNU Project and Free Software Foundation, championing software freedom and copyleft licensing. https://en.wikipedia.org/wiki/Richard_Stallman
+    "stallman",
     // Michael Stonebraker is a database research pioneer and architect of Ingres, Postgres, VoltDB and SciDB. Winner of 2014 ACM Turing Award. https://en.wikipedia.org/wiki/Michael_Stonebraker
     "stonebraker",
     // Ivan Edward Sutherland - American computer scientist and Internet pioneer, widely regarded as the father of computer graphics. https://en.wikipedia.org/wiki/Ivan_Sutherland
@@ -584,6 +618,8 @@ const SURNAMES: &[&str] = &[
     "yonath",
     // Nikolay Yegorovich Zhukovsky (Russian: Никола́й Его́рович Жуко́вский, January 17 1847 – March 17, 1921) was a Russian scientist, mathematician and engineer, and a founding father of modern aero- and hydrodynamics. Whereas contemporary scientists scoffed at the idea of human flight, Zhukovsky was the first to undertake the study of airflow. He is often called the Father of Russian Aviation. https://en.wikipedia.org/wiki/Nikolay_Yegorovich_Zhukovsky
     "zhukovsky",
+    // Person who forked this crate
+    "tuatini",
 ];
 
 /// Generates a random name from the list of adjectives and surnames in this crate
