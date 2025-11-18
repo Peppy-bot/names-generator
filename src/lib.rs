@@ -598,13 +598,13 @@ pub fn get_random(mut rng: impl rand_core::RngCore) -> String {
 
 #[cfg(test)]
 mod tests {
-    use rand::thread_rng;
+    use rand::rng;
 
     use super::*;
 
     #[test]
     fn test_ends_with_four_digit_num() {
-        let mut rng = thread_rng();
+        let mut rng = rng();
         let name = get_random(&mut rng);
 
         assert_eq!(name.split('-').count(), 3);

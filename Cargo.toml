@@ -1,13 +1,13 @@
 [package]
-name = "names-generator"
-version = "0.1.2"
+name = "names-generator2"
+version = "0.1.3"
 edition = "2021"
 license-file = "LICENSE"
 description = "A sensible and sufficiently random names generator"
-repository = "https://github.com/siddhantk232/namegen/"
+repository = "https://github.com/Peppy-bot/names-generator"
 
 [dependencies]
-rand_core = { version = "0.6.4", default-features = false }
+rand_core = { version = "0.9", default-features = false }
 
 [dev-dependencies]
-rand = "0.8.5"
+rand = "0.9"
