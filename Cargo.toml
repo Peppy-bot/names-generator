@@ -1,7 +1,7 @@
 [package]
 name = "names-generator2"
-version = "0.2.0"
-edition = "2021"
+version = "0.2.1"
+edition = "2024"
 license-file = "LICENSE"
 description = "A sensible and sufficiently random names generator"
 repository = "https://github.com/Peppy-bot/names-generator"
