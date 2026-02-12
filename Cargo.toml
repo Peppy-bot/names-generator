@@ -7,7 +7,7 @@ description = "A sensible and sufficiently random names generator"
 repository = "https://github.com/Peppy-bot/names-generator"
 
 [dependencies]
-rand_core = { version = "0.9", default-features = false }
+rand_core = { version = "0.10", default-features = false }
 
 [dev-dependencies]
-rand = "0.9"
+rand = "0.10"

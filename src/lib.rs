@@ -624,7 +624,7 @@ const SURNAMES: &[&str] = &[
 
 /// Generates a random name from the list of adjectives and surnames in this crate
 /// formatted as "adjective-surname-{4-digit-random-number}".
-pub fn get_random(mut rng: impl rand_core::RngCore) -> String {
+pub fn get_random(mut rng: impl rand_core::Rng) -> String {
     let num = rng.next_u64() % 10000;
     let adj = ADJECTIVES[(rng.next_u64() % ADJECTIVES.len() as u64) as usize];
     let surname = SURNAMES[(rng.next_u64() % SURNAMES.len() as u64) as usize];
@@ -644,6 +644,6 @@ mod tests {
         let name = get_random(&mut rng);
 
         assert_eq!(name.split('-').count(), 3);
-        assert_eq!(name.split('-').last().unwrap().len(), 4);
+        assert_eq!(name.split('-').next_back().unwrap().len(), 4);
     }
 }
