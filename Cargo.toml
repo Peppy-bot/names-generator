@@ -3,7 +3,7 @@ name = "names-generator2"
 version = "0.3.0"
 edition = "2024"
 license-file = "LICENSE"
-description = "A sensible and sufficiently random names generator"
+description = "A sensible and sufficiently random funny animal names generator"
 repository = "https://github.com/Peppy-bot/names-generator"
 
 [dependencies]
